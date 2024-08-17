@@ -655,7 +655,7 @@ textarea {
 
 .close-button:hover .form-close,
 .close-button:focus .form-close {
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .form-container {
