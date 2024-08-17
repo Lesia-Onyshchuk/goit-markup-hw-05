@@ -458,31 +458,87 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Form -->
-    <div class="form-modal-overlay">
+    <div class="form-modal-overlay is-open">
       <div class="form-modal">
+        <button type="button" class="close-button">
+          <svg class="form-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <p class="form-head">Leave your contacts and we will call you back</p>
-        <label class="form-label"
-          >Name<input name="name" type="text" class="form-text"
-        /></label>
-        <label class="form-label"
-          >Phone<input name="phone" type="tel" class="form-text"
-        /></label>
-        <label class="form-label"
-          >Email<input name="email" type="email" class="form-text"
-        /></label>
-        <label class="form-label"
-          >Comment<textarea
-            placeholder="Text input"
-            rows="6"
-            class="form-text"
-          ></textarea>
-        </label>
-        <label class="form-checkbox"
-          ><input name="name" type="checkbox" />I accept the terms and
-          conditions of the
-          <span class="form-policy">Privacy Policy</span></label
-        >
-        <button type="submit" class="form-button">Send</button>
+        <form>
+          <div class="form-container">
+            <label for="form-name" class="form-label">Name</label>
+            <div class="form-input">
+              <input
+                name="name"
+                type="text"
+                class="form-text"
+                id="form-name"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-container">
+            <label for="form-tel" class="form-label">Phone</label>
+            <div class="form-input">
+              <input
+                name="phone"
+                type="tel"
+                class="form-text"
+                id="form-tel"
+                required
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-container">
+            <label for="form-email" class="form-label">Name</label>
+            <div class="form-input">
+              <input
+                name="name"
+                type="email"
+                class="form-text"
+                id="form-email"
+                required
+              />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-container">
+            <label for="form-textarea" class="form-label">Comment</label>
+            <textarea
+              placeholder="Text input"
+              class="form-text textarea"
+              id="form-textarea"
+            ></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input
+              name="name"
+              type="checkbox"
+              class="checkbox visually-hidden"
+              id="checkbox"
+            />
+            <label class="form-checkbox" for="checkbox">
+              <span class="checkbox-box">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="form-policy">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="form-button">Send</button>
+        </form>
       </div>
     </div>
     <!-- #endregion Form -->
