@@ -53,7 +53,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion Hero -->
@@ -476,9 +478,9 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Form -->
-    <div class="form-modal-overlay">
+    <div class="form-modal-overlay" data-modal>
       <div class="form-modal">
-        <button type="button" class="close-button">
+        <button type="button" class="close-button" data-modal-close>
           <svg class="form-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -562,5 +564,6 @@
       </div>
     </div>
     <!-- #endregion Form -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
